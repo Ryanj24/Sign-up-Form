@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif, Helvetica;
 }
 
 body {
@@ -19,6 +21,7 @@ a:visited {
 }
 
 .main-container {
+    display: flex;
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -45,8 +48,14 @@ a:visited {
     background-color: rgba(45, 48, 46, 0.5);
 }
 
+.img-section .logo-section i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #f1f3f5;
+}
+
 .img-section .logo-section>h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: #f1f3f5;
 }
 
@@ -66,5 +75,94 @@ a:visited {
 
 .img-section .img-credit p a {
     text-decoration: none;
+    color: #f1f3f5;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    border-radius: 0 20px 20px 0;
+    background-color: rgba(45, 48, 46, 0.5);
+}
+
+.main-section .text-section {
+    color: #f1f3f5;
+    font-size: 30px;
+    width: 75%;
+    padding: 20px 0 20px 30px;
+}
+
+.main-section .text-section p:last-child {
+    margin-top: 30px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 111, 111);
+    padding: 20px 0 20px 30px;
+    margin: 0 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 5px rgb(19, 126, 175);
+}
+
+.main-form #myForm {
+    width: 70%;
+}
+
+.main-form h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #f1f3f5;
+}
+
+.main-form .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main-form .grid-container div{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    width: 70%;
+}
+
+.main-form .grid-container label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f1f3f5;
+}
+
+.main-form .grid-container input {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main-form .grid-container input:focus {
+    box-shadow: 5px 5px 5px black;
+}
+
+.signup {
+    width: 100%;
+    padding: 20px 0 20px 30px;
+    margin-top: 10px;
+}
+
+.signup input {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.signup p {
+    font-size: 25px;
     color: #f1f3f5;
 }
