@@ -162,7 +162,30 @@ a:visited {
     margin-bottom: 20px;
 }
 
+.signup input[type = "submit"]:hover {
+    cursor: pointer;
+}
+
 .signup p {
     font-size: 25px;
     color: #f1f3f5;
+}
+
+@media screen and (max-width: 1700px) {
+    .img-section {
+        width: 30%;
+    }
+
+    .img-section .logo-section i {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    
+    .img-section .logo-section>h1 {
+        font-size: 50px;
+    }
+
+    .main-section .text-section {
+        font-size: 20px;
+    }
 }
